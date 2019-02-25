@@ -1,0 +1,19 @@
+1-	SELECT country_code FROM `bigquery-public-data.world_bank_intl_education.country_summary`
+2-	SELECT * FROM `bigquery-public-data.world_bank_intl_education.country_summary` WHERE short_name= "EAP"
+3-SELECT COUNT(DISTINCT(country_code)) FROM `bigquery-public-data.world_bank_intl_education.country_summary`
+Answer:- 241
+4-SELECT short_name FROM `bigquery-public-data.world_bank_intl_education.country_summary` WHERE short_name IS NOT NULL
+5-SELECT country_code AS code FROM `bigquery-public-data.world_bank_intl_education.country_summary`
+6-SELECT country_name, year FROM `bigquery-public-data.world_bank_health_population.health_nutrition_population` WHERE country_name=”Bulgaria” and year= 2018
+7-SELECT country_name, MAX(value) AS MAX_VALUE FROM `bigquery-public-
+data.world_bank_health_population.health_nutrition_population` GROUP BY country_name ORDER BY MAX_VALUE DESC
+8-SELECT MIN(value) FROM `bigquery-public-data.world_bank_wdi.indicators_data`
+Answer:-   -9.82482129757206E15
+9-SELECT SUM(day_of_crash) FROM `bigquery-public-data.nhtsa_traffic_fatalities.accident_2016`
+Answer:- 547506
+10-SELECT AVG(country_area) FROM `bigquery-public-data.census_bureau_international.country_names_area`
+Answer- 577696.68377193
+
+
+
+
